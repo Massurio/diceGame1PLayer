@@ -8,7 +8,7 @@ function rollTheDice() {
   var randomNumber = Math.floor(Math.random() * 6) + 1;
   document
     .querySelector('.img')
-    .setAttribute('src', '/images/dice' + randomNumber + '.png');
+    .setAttribute('src', './images/dice' + randomNumber + '.png');
   counter = counter + randomNumber;
   document.getElementById('score').innerHTML = counter;
   if (counter > 20) {
